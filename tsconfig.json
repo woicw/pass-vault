@@ -7,6 +7,7 @@
     "strictNullChecks": true,
     "sourceMap": true,
     "rootDir": "src",
+    "importHelpers": true,
     "moduleResolution": "node",
     "esModuleInterop": true,
     "strict": true,
