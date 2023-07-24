@@ -3,6 +3,7 @@ import commonjs from "@rollup/plugin-commonjs";
 import typescript from "rollup-plugin-typescript2";
 import { minify } from "rollup-plugin-swc3";
 import alias from "@rollup/plugin-alias";
+import externals from 'rollup-plugin-node-externals';
 
 export default {
   input: "src/index.ts",
@@ -22,6 +23,7 @@ export default {
   ],
 
   plugins: [
+    externals(),
     alias({
       entries: [{ find: "@/*", replacement: "src/*" }],
     }),
@@ -33,6 +35,5 @@ export default {
       abortOnError: false,
     }),
     minify(),
-  ],
-  external: ["node:fs/promises", "node-forge", "node:os","inquirer","chalk","open"],
+  ]
 };

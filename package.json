@@ -35,6 +35,7 @@
     "@typescript-eslint/parser": "^5.57.0",
     "eslint": "^8.37.0",
     "rollup": "^3.20.2",
+    "rollup-plugin-node-externals": "^6.1.1",
     "rollup-plugin-swc3": "^0.8.1",
     "rollup-plugin-typescript2": "^0.34.1",
     "typescript": "^5.0.2"

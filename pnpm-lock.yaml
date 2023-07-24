@@ -64,6 +64,9 @@ devDependencies:
   rollup:
     specifier: ^3.20.2
     version: 3.20.2
+  rollup-plugin-node-externals:
+    specifier: ^6.1.1
+    version: 6.1.1(rollup@3.20.2)
   rollup-plugin-swc3:
     specifier: ^0.8.1
     version: 0.8.1(@swc/core@1.3.49)(rollup@3.20.2)
@@ -1698,6 +1701,15 @@ packages:
     hasBin: true
     dependencies:
       glob: 7.2.3
+    dev: true
+
+  /rollup-plugin-node-externals@6.1.1(rollup@3.20.2):
+    resolution: {integrity: sha512-127OFMkpH5rBVlRHRBDUMk1m1sGuzbGy7so5aj/IkpUb2r3+wOWjR/erUzd2ChEQWPsxsyQG6xpYYvPBAdcBRA==}
+    engines: {node: '>=16.0.0'}
+    peerDependencies:
+      rollup: ^3.0.0
+    dependencies:
+      rollup: 3.20.2
     dev: true
 
   /rollup-plugin-swc3@0.8.1(@swc/core@1.3.49)(rollup@3.20.2):
