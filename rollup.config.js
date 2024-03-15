@@ -14,12 +14,7 @@ export default {
       exports: "named",
       preserveModules: true,
       preserveModulesRoot: "src",
-    },
-    {
-      file: "lib/cjs/index.js",
-      format: "cjs",
-      exports: "named",
-    },
+    }
   ],
 
   plugins: [
@@ -28,7 +23,6 @@ export default {
       entries: [{ find: "@/*", replacement: "src/*" }],
     }),
     resolve(),
-    commonjs(),
     typescript({
       tsconfig: "./tsconfig.json",
       clean: true,
